@@ -9,25 +9,19 @@ using Vector2 = UnityEngine.Vector2;
 
 namespace IncreaseLookDirection;
 
-[BepInPlugin("com.dirtbikercj.IncreaseLookDirection", "IncreaseLookDirection", "1.0.0")]
+[BepInPlugin("com.dirtbikercj.IncreaseLookDirection", "IncreaseLookDirection", "1.0.1")]
 public class Plugin : BaseUnityPlugin
 {
-    public const int TarkovVersion = 30626;
-
-    public static Plugin instance;
-
+    public const int TarkovVersion = 33420;
+    
     private void Awake()
     {
         if (!VersionChecker.CheckEftVersion(Logger, Info, Config))
         {
             throw new Exception("Invalid EFT Version");
         }
-
-        instance = this;
+        
         DontDestroyOnLoad(this);
-
-        //var mouseLookHorizontalLimit = AccessTools.Field(typeof(EFTHardSettings), "MOUSE_LOOK_HORIZONTAL_LIMIT");
-        //mouseLookHorizontalLimit.SetValue(mouseLookHorizontalLimit, new Vector2(-90f, 90f));
         
         new LookPatch().Enable();
     }
