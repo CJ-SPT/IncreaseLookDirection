@@ -140,7 +140,7 @@
 		/>
 		<ZipDirectory
 				SourceDirectory="$(ProjectDir)release\IncreasedLookDirection\"
-				DestinationFile="$(ProjectDir)release\IncreasedLookDirection-$(ConfigurationName)-$(Version)-$(SourceRevisionId).zip"
+				DestinationFile="$(ProjectDir)release\IncreasedLookDirection-$(ConfigurationName)-$(SourceRevisionId).zip"
 		/>
 	</Target>
 	
