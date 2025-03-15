@@ -9,10 +9,10 @@ using Vector2 = UnityEngine.Vector2;
 
 namespace IncreaseLookDirection;
 
-[BepInPlugin("com.dirtbikercj.IncreaseLookDirection", "IncreaseLookDirection", "1.0.1")]
+[BepInPlugin("com.dirtbikercj.IncreaseLookDirection", "IncreaseLookDirection", "1.0.2")]
 public class Plugin : BaseUnityPlugin
 {
-    public const int TarkovVersion = 33420;
+    public const int TarkovVersion = 35392;
     
     private void Awake()
     {
